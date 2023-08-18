@@ -4,11 +4,11 @@ const withNextra = require("nextra")({
 });
 
 const nextConfig = {
-  ...withNextra(),
   output: "export", // 打包模式
   images: {
     unoptimized: true,
   },
+  ...withNextra(),
 };
 
 module.exports = nextConfig;
