@@ -38,5 +38,5 @@ jobs:
          user: ${{ secrets.DR_NAME }}
          pass: ${{ secrets.DR_PASSWORD }}
          connect_timeout: 100s
-         local: './.nojekyll/*' # 这里是下一步要创建的vue项目构建完成后的静态资源路径
+         local: './out/*' # 这里是下一步要创建的vue项目构建完成后的静态资源路径
          remote: ${{ secrets.DR_ADDRESS }} # 这里是 step1 中，在服务器上创建用于存放静态资源的文件夹
