@@ -1,6 +1,11 @@
 const withNextra = require("nextra")({
-  theme: "nextra-theme-docs",
-  themeConfig: "./theme.config.tsx",
+  theme: 'nextra-theme-docs',
+  themeConfig: './theme.config.tsx',
+  latex: true,
+  flexsearch: {
+    codeblocks: false
+  },
+  defaultShowCopyCode: true
 });
 
 const nextConfig = {
