@@ -25,7 +25,7 @@ jobs:
       - name: Build
         run: |
           pnpm install  # 安装依赖
-          pnpm run build  # 执行打包
+          pnpm build  # 执行打包
       # 连接到ssh，并且做一个拷贝操作的action
       - name: Deploy 🚀
         uses: cross-the-world/scp-pipeline@master
@@ -36,5 +36,5 @@ jobs:
          host: ${{ secrets.DR_HOST }}
          user: ${{ secrets.DR_NAME }}
          pass: ${{ secrets.DR_PASSWORD }}
-         local: './build/*' # 这里是下一步要创建的nextra项目构建完成后的静态资源路径
+         local: './out/*' # 这里是下一步要创建的nextra项目构建完成后的静态资源路径
          remote: ${{ secrets.DR_ADDRESS }} # 这里是 step1 中，在服务器上创建用于存放静态资源的文件夹
