@@ -1,10 +1,11 @@
 import { useRouter } from 'next/router'
 import type { DocsThemeConfig } from 'nextra-theme-docs'
 import { useConfig } from 'nextra-theme-docs'
+import Image from 'next/image'
 
 const logo = (
   <span>
-    11
+    <Image src="/logo.png" alt="logo" width={70} height={35}/>
     <style jsx>{`
       span {
         padding: 0.5rem 0.5rem 0.5rem 0;
@@ -97,6 +98,7 @@ const config: DocsThemeConfig = {
   //     </a>
   //   )
   // },
+  docsRepositoryBase: 'https://github.com/zslx20201005/Nextra-blog/blob/main/',
   editLink: {
     text: 'Edit this page on GitHub →'
   },

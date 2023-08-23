@@ -1,5 +1,4 @@
 const withNextra = require("nextra")({
-  export:'out',
   theme: 'nextra-theme-docs',
   themeConfig: './theme.config.tsx',
   latex: true,
@@ -10,7 +9,6 @@ const withNextra = require("nextra")({
 });
 
 const nextConfig = {
-  distDir: 'build',
   images: {
     unoptimized: true,
   },
