@@ -90,14 +90,6 @@ const config: DocsThemeConfig = {
       </>
     )
   },
-  // banner: {
-  //   key: '2.0-release',
-  //   text: (
-  //     <a href="https://nextra.site" target="_blank" rel="noreferrer">
-  //       🎉 Nextra 2.0 is released. Read more →
-  //     </a>
-  //   )
-  // },
   docsRepositoryBase: 'https://github.com/zslx20201005/Nextra-blog/blob/main/',
   editLink: {
     text: 'Edit this page on GitHub →'

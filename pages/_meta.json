@@ -7,9 +7,41 @@
       "layout": "raw"
     }
   },
-  "docs": {
+  "personage": {
     "type": "page",
-    "title": "文档"
+    "title": "了解我",
+    "display": "hidden",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "frontEnd": {
+    "type": "menu",
+    "title": "前端",
+    "items": {
+      "Vue": {
+        "title": "Vue",
+        "href": "/frontEnd/vue"
+      },
+      "React": {
+        "title": "React",
+        "href": "/frontEnd/react"
+      }
+    }
+  },
+  "rearEnd": {
+    "type": "menu",
+    "title": "后端",
+    "items": {
+      "Java": {
+        "title": "Java",
+        "href": "/rearEnd/Java"
+      },
+      "Python": {
+        "title": "Python",
+        "href": "/rearEnd/Python"
+      }
+    }
   },
   "showcase": {
     "type": "page",
@@ -17,13 +49,6 @@
     "theme": {
       "typesetting": "article",
       "layout": "full"
-    }
-  },
-  "about": {
-    "type": "page",
-    "title": "关于",
-    "theme": {
-      "typesetting": "article"
     }
   },
   "404": {
