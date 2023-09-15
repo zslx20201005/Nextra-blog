@@ -31,7 +31,7 @@ export const Feature = ({
   >
     {children}
     {href ? (
-      <Link className={styles.link} href={href} target="_blank">
+      <Link className={styles.link} href={href}>
         →
       </Link>
     ) : null}
