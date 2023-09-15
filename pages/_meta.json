@@ -51,6 +51,13 @@
       "layout": "full"
     }
   },
+  "about": {
+    "type": "page",
+    "title": "关于",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
   "404": {
     "type": "page",
     "theme": {

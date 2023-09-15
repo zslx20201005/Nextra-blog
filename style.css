@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-feature-settings:
-    'rlig' 1,
-    'calt' 1;
+  font-feature-settings: "rlig" 1, "calt" 1;
 }
 
 .home-content p {
@@ -47,4 +45,16 @@ code.text-\[\.9em\] {
   .home-content .hide-small {
     display: none;
   }
+}
+
+/* 修改card */
+.nextra-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+article.nextra-body-typesetting-article a:hover{
+  text-decoration:none
 }

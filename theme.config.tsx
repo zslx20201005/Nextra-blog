@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const logo = (
   <span>
-    <Image src="/logo.png" alt="logo" width={70} height={35}/>
+    <Image src="/logo.png" alt="logo" width={70} height={35} />
     <style jsx>{`
       span {
         padding: 0.5rem 0.5rem 0.5rem 0;
@@ -111,10 +111,33 @@ const config: DocsThemeConfig = {
   footer: {
     text: (
       <div className="flex w-full flex-col items-center sm:items-start">
-        <p className="mt-6 text-xs">
+        <p className="text-xs">
           © {new Date().getFullYear()} The ZSLX Project.
         </p>
       </div>
+    )
+  },
+  toc: {
+    backToTop: true,
+    extraContent: (
+      <>
+        <div className="mt-4 flex h-6 items-center gap-2">
+          <input
+            type="range"
+            min="0"
+            max="360"
+            step="1"
+            onChange={e => {
+              const hue = e.target.value
+              document.documentElement.style.setProperty(
+                '--nextra-primary-hue',
+                hue + 'deg'
+              )
+            }}
+          />
+          <code id="test-theme-hue" className="text-sm text-gray-500"></code>
+        </div>
+      </>
     )
   }
 }
